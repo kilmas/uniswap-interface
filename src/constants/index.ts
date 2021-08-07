@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@uniswap/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from 'aanbswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
@@ -23,7 +23,11 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
   [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
   [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
-  [ChainId.KOVAN]: [WETH[ChainId.KOVAN]]
+  [ChainId.HECOMAIN]: [WETH[ChainId.HECOMAIN]],
+  [ChainId.HECOTEST]: [WETH[ChainId.HECOTEST]],
+  [ChainId.BIANMAIN]: [WETH[ChainId.BIANMAIN]],
+  [ChainId.BIANTEST]: [WETH[ChainId.BIANTEST]],
+  [ChainId.OKTEST]: [WETH[ChainId.OKTEST]],
 }
 
 // used to construct intermediary pairs for trading
