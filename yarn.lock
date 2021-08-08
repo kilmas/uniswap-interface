@@ -2937,10 +2937,10 @@
   "resolved" "https://registry.npmjs.org/@zeit/schemas/-/schemas-2.6.0.tgz"
   "version" "2.6.0"
 
-"aanbswap-sdk@^2.0.1":
-  "integrity" "sha512-waglDrNikgJkZTGtxKOhjRYHADH+FyUZIB/wTHoGPjqcmHMHEvceVmatskoTLe/lEeB8bx/3SbgnIP0W/Q7S7g=="
-  "resolved" "https://registry.npmjs.org/aanbswap-sdk/-/aanbswap-sdk-2.0.1.tgz"
-  "version" "2.0.1"
+"aanbswap-sdk@^2.0.5":
+  "integrity" "sha512-vE8JdzBF/w/4ifHFE3BZI97DoXA+OChL9CiWQtxEAYcFea+d+bdrKJqYqIThfoCoUsaZrgzJFqwsgPifvnA7bQ=="
+  "resolved" "https://registry.npmjs.org/aanbswap-sdk/-/aanbswap-sdk-2.0.5.tgz"
+  "version" "2.0.5"
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     "big.js" "^5.2.2"

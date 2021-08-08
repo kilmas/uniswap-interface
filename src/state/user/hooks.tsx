@@ -166,10 +166,7 @@ export function usePairAdder(): (pair: Pair) => void {
  * @param tokenB the other token
  */
 export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
-  console.log('Pair: ',Pair);
-  console.log('tokenA: ',tokenA);
-  console.log('tokenB: ',tokenB);
-  console.log('chainId: ',tokenA.chainId);
+  
   return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'UNI-V2', 'Uniswap V2')
 }
 
