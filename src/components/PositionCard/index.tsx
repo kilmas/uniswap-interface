@@ -1,4 +1,4 @@
-import { JSBI, Pair, Percent } from 'aanbswap-sdk'
+import { ETHER, JSBI, Pair, Percent } from 'aanbswap-sdk'
 import { darken } from 'polished'
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'
@@ -124,7 +124,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
 }
 
 export default function FullPositionCard({ pair, border }: PositionCardProps) {
-  const { account } = useActiveWeb3React()
+  const { account, chainId } = useActiveWeb3React()
 
   const currency0 = unwrappedToken(pair.token0)
   const currency1 = unwrappedToken(pair.token1)
@@ -158,7 +158,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
           <RowFixed>
             <DoubleCurrencyLogo currency0={currency0} currency1={currency1} margin={true} size={20} />
             <Text fontWeight={500} fontSize={20}>
-              {!currency0 || !currency1 ? <Dots>Loading</Dots> : `${currency0.symbol}/${currency1.symbol}`}
+              {!currency0 || !currency1 ? <Dots>Loading</Dots> : `${currency0 === ETHER ? currency0.toDisplayableSymbol(chainId || 1): currency0.symbol}/${currency1 === ETHER ? currency1.toDisplayableSymbol(chainId || 1): currency1.symbol}`}
             </Text>
           </RowFixed>
           <RowFixed>
@@ -174,7 +174,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
             <FixedHeightRow>
               <RowFixed>
                 <Text fontSize={16} fontWeight={500}>
-                  Pooled {currency0.symbol}:
+                  Pooled {currency0 === ETHER ? currency0.toDisplayableSymbol(chainId || 1): currency0.symbol}:
                 </Text>
               </RowFixed>
               {token0Deposited ? (
@@ -192,7 +192,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
             <FixedHeightRow>
               <RowFixed>
                 <Text fontSize={16} fontWeight={500}>
-                  Pooled {currency1.symbol}:
+                  Pooled {currency1 === ETHER ? currency1.toDisplayableSymbol(chainId || 1): currency1.symbol}:
                 </Text>
               </RowFixed>
               {token1Deposited ? (
