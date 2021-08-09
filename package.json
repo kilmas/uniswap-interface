@@ -107,6 +107,6 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "aanbswap-sdk": "^2.0.5"
+    "aanbswap-sdk": "^3.0.0"
   }
 }
