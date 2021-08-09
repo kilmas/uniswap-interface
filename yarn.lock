@@ -3099,10 +3099,10 @@
   resolved "https://registry.npm.taobao.org/@zxing/text-encoding/download/@zxing/text-encoding-0.9.0.tgz#fb50ffabc6c7c66a0c96b4c03e3d9be74864b70b"
   integrity sha1-+1D/q8bHxmoMlrTAPj2b50hktws=
 
-aanbswap-sdk@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.nlark.com/aanbswap-sdk/download/aanbswap-sdk-3.0.0.tgz#5232a3ab52b363551db8ab2ba245d9b4cec42424"
-  integrity sha1-UjKjq1KzY1UduKsrokXZtM7EJCQ=
+aanbswap-sdk@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.nlark.com/aanbswap-sdk/download/aanbswap-sdk-3.1.1.tgz#c5ba882242ed6675e4c57a496f78a495fee9440e"
+  integrity sha1-xbqIIkLtZnXkxXpJb3iklf7pRA4=
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
